@@ -1,0 +1,108 @@
+
+body {
+    padding:2rem;
+
+    background-color: rgb(94, 138, 123);
+
+
+}
+
+h1 {
+
+    color: rgb(234, 245, 182);
+    font-size: 4rem;
+    
+ }
+
+ h2 {
+
+    color: aliceblue;
+    font-size: 1.5rem;
+ }
+
+ h3 {
+
+    color: aliceblue;
+    font-size: 1.5rem;
+ }
+
+ h4 {
+    color: aliceblue;
+    font-size: 1.5rem;
+ }
+
+ h5 {
+
+    color: aliceblue;
+    font-size: 1.5rem;
+
+ }
+
+ h6 {
+
+    color: aliceblue;
+    font-size: 1.5rem;
+
+}
+
+
+
+ 
+
+p { 
+
+    color: rgb(2, 27, 14);
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+p1{
+
+    color: rgb(2, 27, 14);
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p2 {
+
+    color: rgb(2, 27, 14);
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p3 {
+
+    color: rgb(2, 27, 14);
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p4 {
+
+    color: rgb(2, 27, 14);
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p5 {
+
+    color: rgb(2, 27, 14);
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+p6 {
+
+    color: rgb(2, 27, 14);
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+
+    padding:3rem;
+    padding-left: 30%;
+}
+
