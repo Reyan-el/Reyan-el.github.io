@@ -13,6 +13,8 @@
       width: 140vh;
       position: center;
       padding: 10vh;
+      background-color: rgb(221, 232, 232);
+      border: 10vh;
 
   
     
@@ -24,10 +26,10 @@
 
 background-color: rgb(122, 54, 158);
 grid-column: 2/4;
-margin: 15%;
-padding: 50px;
-height: 250px;
-width: 5vh;
+margin: 20%;
+height: 50vh;
+width: 20vh;
+
 
 
 
@@ -76,8 +78,7 @@ width: 5vh;
     background-color: rgb(243, 178, 244);
     grid-column: 2/4;
     margin: 18%;
-    padding-left: 15vh;
-    width: 7vh;
+    width: 20vh;
     height: 55vh;
 
 
