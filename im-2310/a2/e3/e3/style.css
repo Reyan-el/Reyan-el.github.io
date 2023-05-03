@@ -1,0 +1,274 @@
+/*
+  This one CSS file is imported into both index.html AND hosono.html so you need to be careful that it 
+  works for both.
+*/
+
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+:root{
+  /* first two colours come from Kuroi's Manga Pallete Palette */
+  /* https://lospec.com/palette-list/manga-pallete */
+  --col-01:#171219;
+  --col-02:#f2fbeb;
+  --col-03:#5252ff;
+  --col-04:#b6e878;
+  font-size: 16px;
+  /* scroll behaviour makes the <a> links to ids scroll to position over time rather than immediately */
+  scroll-behavior: smooth;
+}
+
+body{
+  padding: 1rem;
+  background-color: var(--col-02);
+  color: var(--col-01);
+}
+
+nav {
+  margin-top: 10px;
+  width: 200%;
+  height: 5%;
+  position: sticky;
+  background-color: #558a15;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.menu a{
+  display: block;
+  padding: 30px;
+  font-size: 16px;
+  color: antiquewhite;
+  color: var(--col-03);
+}
+
+.menu li a {
+  font-size: large;
+  text-decoration: none;
+  color: #000;
+}
+
+.menu li:hover {
+  background-color: var(--col-01);
+  animation: spring 300ms ease-out;
+  font-weight: bold;
+  text-shadow: #5252ff;
+
+}
+
+.menu li:active {
+  transform: translate(4px);
+}
+
+nav li{
+  font-size: 1rem;
+}
+
+section{
+  margin-bottom: 2rem;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+p{
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+figcaption{
+  width: fit-content;
+}
+
+dl ul{
+  margin-bottom: 0;
+}
+
+li{
+  font-size: 1rem;
+}
+
+dd{
+  padding-left: 60px;
+}
+
+li ul{
+  padding-left: 40px;
+}
+
+.img-wrapper{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.img-figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-img{
+  width: 80%;
+}
+
+.res-columns{
+  column-width: 25rem;
+}
+
+#mode-button{
+  float: right;
+  /* note the use of position: sticky to keep the button on the page even with scrolling */
+  position: sticky;
+  top: 1rem;
+}
+
+/* code for loading page */
+
+#loading-page {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+
+#load-body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* changing button to look like a link */
+#load-link{
+  line-height: 1rem;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+/* throbber while page is fake loading */
+#load-throbber{
+  /* the width, height and background-color give it a shape on the page without any content inside - 
+  these value are arbitrary, please change to create your own design  */
+  border: 16px solid #b6e878;
+  border-top: 16px solid #f2fbeb ;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: var(--col-03);
+  animation: spin 2s linear infinite;
+  /* we also initially set display to none so it only shows once the link is clicked */
+  display: none;
+}
+
+#loading-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+  color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg) ; }
+  100% { transform: rotate(360deg); }
+}
+
+#information {
+  display: none;
+}
+
+button {
+  background-color: coral;
+  color: #171219;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: crimson;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.dark-mode header {
+  background-color: darkorchid;
+  color: azure;
+}
+
+.dark-mode button {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.dark-mode button:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+
+/* Media Queries */
+
+/* medium devices 600 - 992 */
+@media only screen and (min-width: 600px) {
+  :root{
+    font-size: 20px;
+  }
+  
+  .img-wrapper{
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+
+}
+
+/* medium devices 992 + */
+@media only screen and (min-width: 992px) {
+  :root{
+    font-size: 24px;
+  }
+
+  .img-wrapper{
+    max-width: fit-content;
+    float: right;
+    margin: 1.5rem;
+  }
+
+}
+
+@media (prefers-reduced-motion) {
+  :root{
+    scroll-behavior: auto;
+  }
+}
