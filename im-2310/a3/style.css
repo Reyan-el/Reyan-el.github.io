@@ -1,0 +1,86 @@
+html{
+    background:#c7d9be;
+    font-family:Helvetica;
+    color:#FFF;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#canvas {
+    border: 1px solid black;
+    background:#FFF;
+}
+
+.color-option {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#color-palette {
+    position: absolute;
+    top: 20px;
+    background: 	#402F1D;
+  }
+
+#cursor-size {
+    position: absolute;
+    top: 65vh;
+  }
+
+  #button-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+
+button {
+    font-family: system-ui, sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: .1em .6em;
+    font-weight: bold;  
+    border: none;
+
+    --c:  #E8DEFC; /* the color for the button*/
+    width:100px;
+    height:100px;
+
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat; /*gradient*/
+    /**button styling**/
+    background: 
+      var(--_g) calc(var(--size,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--size,0%)) 0%,
+      var(--_g) calc(var(--size,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--size,0%)) 100%;
+    background-size: 50.5% calc(var(--size,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  
+  button:hover {
+    --size: 100%;
+    transition: background-position .4s, background-size 0s;
+  }
+  button:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+  }
+
+#extra-menu{
+    position:absolute;
+    bottom:3vh;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  color:#FFF;
+  letter-spacing: 1vw;
+}
+
